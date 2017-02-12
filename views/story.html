@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <title> Stories </title>
+  </head>
+
+  <body>
+    <h1> {{title}} </h1>
+    <h2> By {{author}} </h2>
+    <div>
+        {{story}}
+        Tags:
+        {% for tag in tags %}
+          tag
+        {% endfor %}
+    </div>
+
+    <div>
+      <h2> Other stories by {{author}} </h2>
+      {% for title in other_story_titles %}
+        <br> {{title}}
+      {% endfor %}
+    </div>
+
+  </body>
+
+</html>
